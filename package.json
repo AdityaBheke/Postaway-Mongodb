@@ -16,7 +16,9 @@
     "url": "https://github.com/AdityaBheke/Postaway/issues"
   },
   "homepage": "https://github.com/AdityaBheke/Postaway#readme",
+  "type": "module",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.19.2"
   }
 }
