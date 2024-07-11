@@ -1,18 +1,28 @@
+// Third party imports
 import express from 'express';
 import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
+
+// Internal imports
+import userRouter from './src/features/user/user.router.js';
+import { errorHandler } from './src/errorHandler/errorHandler.middleware.js';
 
 // Setup
 const server = express();
 server.use(bodyParser.json());
+server.use(cookieParser());
 
-// Routes
+//Custom Routes
+server.use('/api/user', userRouter);
 
+// Default Routes
 server.get('/',(req,res)=>{
     res.send('Welcome to Postaway!');
 })
 server.use((req,res)=>{
     res.status(404).send('API not found.')
 })
+server.use(errorHandler);
 
 // Listen
 server.listen(3100,()=>{
