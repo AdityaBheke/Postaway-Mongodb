@@ -7,7 +7,7 @@ export class customError extends Error{
 
 export const errorHandler = (err, req, res, next)=>{
     if (err instanceof customError) {
-        res.status(err.statusCode).send(err.message);
+        res.status(err.statusCode).send({status: false, errorCode: err.statusCode, message: err.message});
     } else {
         res.status(500).send('Something went wrong!');
     }

@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser';
 
 // Internal imports
 import userRouter from './src/features/user/user.router.js';
+import postRouter from './src/features/post/post.router.js';
 import { errorHandler } from './src/errorHandler/errorHandler.middleware.js';
 
 // Setup
@@ -14,6 +15,7 @@ server.use(cookieParser());
 
 //Custom Routes
 server.use('/api/user', userRouter);
+server.use('/api/post', postRouter);
 
 // Default Routes
 server.get('/',(req,res)=>{
