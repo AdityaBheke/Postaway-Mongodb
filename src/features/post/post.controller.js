@@ -40,7 +40,7 @@ export default class PostController{
         if (post) {
             res.status(201).send({status:true, message: `Post with id ${postId} updated`, post: post});
         } else {
-            throw new customError(404, 'Post not found');
+            throw new customError(404, `Unable to update post with id ${postId}`);
         }
     }
     deletePost(req, res){
@@ -50,7 +50,7 @@ export default class PostController{
         if (post) {
             res.status(201).send({status:true, message: `Post with id ${postId} deleted`, post: post});
         } else {
-            throw new customError(404, 'Post not found');
+            throw new customError(404, `Unable to delete post with id ${postId}`);
         }
     }
 }

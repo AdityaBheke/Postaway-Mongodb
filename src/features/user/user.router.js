@@ -1,11 +1,12 @@
 import express from 'express';
 
 import UserController from './user.controller.js';
+import { signUpValidator, signInValidator } from '../../middlewares/validation.middleware.js';
 
 const userRouter = express.Router();
 const userController = new UserController();
 
-userRouter.post('/signup',userController.signupUser);
-userRouter.post('/signin',userController.signinUser);
+userRouter.post('/signup', signUpValidator, userController.signupUser);
+userRouter.post('/signin', signInValidator, userController.signinUser);
 
 export default userRouter;
