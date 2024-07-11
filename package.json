@@ -1,0 +1,22 @@
+{
+  "name": "postaway",
+  "version": "1.0.0",
+  "description": "Social networking application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdityaBheke/Postaway.git"
+  },
+  "author": "Aditya Bheke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdityaBheke/Postaway/issues"
+  },
+  "homepage": "https://github.com/AdityaBheke/Postaway#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
