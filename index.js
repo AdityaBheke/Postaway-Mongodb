@@ -6,7 +6,9 @@ import cookieParser from 'cookie-parser';
 // Internal imports
 import userRouter from './src/features/user/user.router.js';
 import postRouter from './src/features/post/post.router.js';
+import commentRouter from './src/features/comment/comment.router.js';
 import { errorHandler } from './src/errorHandler/errorHandler.middleware.js';
+
 
 // Setup
 const server = express();
@@ -16,6 +18,7 @@ server.use(cookieParser());
 //Custom Routes
 server.use('/api/user', userRouter);
 server.use('/api/post', postRouter);
+server.use('/api/comment', commentRouter);
 
 // Default Routes
 server.get('/',(req,res)=>{
