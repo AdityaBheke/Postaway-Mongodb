@@ -7,6 +7,7 @@ import cookieParser from 'cookie-parser';
 import userRouter from './src/features/user/user.router.js';
 import postRouter from './src/features/post/post.router.js';
 import commentRouter from './src/features/comment/comment.router.js';
+import likeRouter from './src/features/like/like.router.js';
 import { errorHandler } from './src/errorHandler/errorHandler.middleware.js';
 
 
@@ -19,6 +20,7 @@ server.use(cookieParser());
 server.use('/api/user', userRouter);
 server.use('/api/post', postRouter);
 server.use('/api/comment', commentRouter);
+server.use('/api/like', likeRouter);
 
 // Default Routes
 server.get('/',(req,res)=>{
