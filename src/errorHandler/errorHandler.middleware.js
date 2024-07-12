@@ -8,14 +8,11 @@ export class customError extends Error{
 }
 
 export const errorHandler = (err, req, res, next)=>{
-    let error;
     if (err instanceof customError) {
-        error = {status: false, errorCode: err.statusCode, message: err.message};
-        logger.error(`URL: ${req.url}, Error: ${JSON.stringify(error)}`);
-        res.status(err.statusCode).send(error);
+        logger.error(`URL: ${req.url}, Error: {status: ${false}, errorCode: ${err.statusCode}, message: ${err.message}}`);
+        res.status(err.statusCode).send({status: false, errorCode: err.statusCode, message: err.message});
     } else {
-        error = err.message;
-        logger.error(`URL: ${req.url}, Error: ${error}`);
+        logger.error(`URL: ${req.url}, Error: {name: ${err.name}, message: ${err.message}}`);
         res.status(500).send('Something went wrong!');
     }
 }

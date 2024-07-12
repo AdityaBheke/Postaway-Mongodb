@@ -1,15 +1,1 @@
-{"level":"info","message":"TimeStamp: Sat Jul 13 2024 00:20:48 GMT+0530 (India Standard Time), URL: /api/post/all, Input Data: {}"}
-{"level":"info","message":"TimeStamp: Sat Jul 13 2024 00:21:30 GMT+0530 (India Standard Time), URL: /api/like/-1, Input Data: {}"}
-{"level":"error","message":"URL: /api/like/-1, Error: {\"status\":false,\"errorCode\":403,\"message\":\"Invalid post id\"}"}
-{"level":"info","message":"TimeStamp: Sat Jul 13 2024 00:27:29 GMT+0530 (India Standard Time), URL: /, Input Data: {}"}
-{"level":"info","message":"TimeStamp: Sat Jul 13 2024 00:27:46 GMT+0530 (India Standard Time), URL: /api/comment/1, Input Data: {\"content\":\"New comment\"}"}
-{"level":"info","message":"TimeStamp: Sat Jul 13 2024 00:28:55 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
-{"level":"error","message":"URL: /api/post/, Error: {\"status\":false,\"errorCode\":403,\"message\":\"File should not be empty\"}"}
-{"level":"info","message":"TimeStamp: Sat Jul 13 2024 00:29:10 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
-{"level":"info","message":"TimeStamp: Sat Jul 13 2024 00:30:28 GMT+0530 (India Standard Time), URL: /api/like/1, Input Data: {}"}
-{"level":"info","message":"TimeStamp: Sat Jul 13 2024 00:32:18 GMT+0530 (India Standard Time), URL: /api/like/-1, Input Data: {}"}
-{"level":"error","message":"URL: /api/like/-1, Error: {\"status\":false,\"errorCode\":403,\"message\":\"Invalid post id\"}"}
-{"level":"info","message":"TimeStamp: Sat Jul 13 2024 00:32:50 GMT+0530 (India Standard Time), URL: /api/comment/5, Input Data: {\"content\":\"Updated comment\"}"}
-{"level":"error","message":"URL: /api/comment/5, Error: {\"status\":false,\"errorCode\":400,\"message\":\"You cannot update other user's comment\"}"}
-{"level":"info","message":"TimeStamp: Sat Jul 13 2024 00:35:40 GMT+0530 (India Standard Time), URL: /api/post/all, Input Data: {}"}
-{"level":"error","message":"URL: /api/post/all, Error: post is not defined"}
+
