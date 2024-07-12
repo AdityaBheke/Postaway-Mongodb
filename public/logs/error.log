@@ -1,0 +1,5 @@
+{"level":"error","message":"URL: /api/like/-1, Error: {\"status\":false,\"errorCode\":403,\"message\":\"Invalid post id\"}"}
+{"level":"error","message":"URL: /api/post/, Error: {\"status\":false,\"errorCode\":403,\"message\":\"File should not be empty\"}"}
+{"level":"error","message":"URL: /api/like/-1, Error: {\"status\":false,\"errorCode\":403,\"message\":\"Invalid post id\"}"}
+{"level":"error","message":"URL: /api/comment/5, Error: {\"status\":false,\"errorCode\":400,\"message\":\"You cannot update other user's comment\"}"}
+{"level":"error","message":"URL: /api/post/all, Error: post is not defined"}

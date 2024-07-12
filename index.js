@@ -9,6 +9,7 @@ import postRouter from './src/features/post/post.router.js';
 import commentRouter from './src/features/comment/comment.router.js';
 import likeRouter from './src/features/like/like.router.js';
 import { errorHandler } from './src/errorHandler/errorHandler.middleware.js';
+import { loggerMiddleware } from './src/middlewares/logger.middleware.js';
 
 
 // Setup
@@ -16,6 +17,7 @@ const server = express();
 server.use(bodyParser.json());
 server.use(cookieParser());
 
+server.use(loggerMiddleware);
 //Custom Routes
 server.use('/api/user', userRouter);
 server.use('/api/post', postRouter);
