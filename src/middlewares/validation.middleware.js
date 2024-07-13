@@ -15,7 +15,7 @@ export const signUpValidator = async (req, res, next)=>{
     }else{
         const errorArray = result.array().map(err=>err.msg);
         const errorString = errorArray.join(', ');
-        next(new customError(403, errorString));
+        next(new customError(400, errorString));
     }
 }
 // SignIn validator
@@ -31,7 +31,7 @@ export const signInValidator = async (req, res, next)=>{
     }else{
         const errorArray = result.array().map(err=>err.msg);
         const errorString = errorArray.join(', ');
-        next(new customError(403, errorString));
+        next(new customError(400, errorString));
     }
 }
 // Create Post validator
@@ -39,7 +39,7 @@ export const createPostValidator = async(req, res, next)=>{
     const rules = [
         body('imageUrl').custom((value,{req})=>{
             if (!req.file) {
-                throw new customError(403, 'File should not be empty');
+                throw new customError(400, 'File should not be empty');
             }else{
                 return true;
             }
@@ -52,7 +52,7 @@ export const createPostValidator = async(req, res, next)=>{
     }else{
         const errorArray = result.array().map(err=>err.msg);
         const errorString = errorArray.join(', ');
-        next(new customError(403, errorString));
+        next(new customError(400, errorString));
     }
 }
 
@@ -62,7 +62,7 @@ export const updatePostValidator = async (req, res, next)=>{
         param('id').isInt({min:0}).withMessage('Invalid post id'),
         body('imageUrl').custom((value,{req})=>{
             if (!req.file) {
-                throw new customError(403, 'File should not be empty');
+                throw new customError(400, 'File should not be empty');
             }else{
                 return true;
             }
@@ -75,7 +75,7 @@ export const updatePostValidator = async (req, res, next)=>{
     }else{
         const errorArray = result.array().map(err=>err.msg);
         const errorString = errorArray.join(', ');
-        next(new customError(403, errorString));
+        next(new customError(400, errorString));
     }
 }
 
@@ -92,7 +92,7 @@ export const commentContentValidator = async (req, res, next)=>{
     }else{
         const errorArray = result.array().map(err=>err.msg);
         const errorString = errorArray.join(', ');
-        next(new customError(403, errorString));
+        next(new customError(400, errorString));
     }
 }
 
@@ -108,6 +108,6 @@ export const postIdValidator = async (req, res, next)=>{
     }else{
         const errorArray = result.array().map(err=>err.msg);
         const errorString = errorArray.join(', ');
-        next(new customError(403, errorString));
+        next(new customError(400, errorString));
     }
 }
