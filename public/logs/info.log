@@ -1,1 +1,95 @@
 
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 01:12:14 GMT+0530 (India Standard Time), URL: /, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 01:12:14 GMT+0530 (India Standard Time), URL: /favicon.ico, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 01:12:23 GMT+0530 (India Standard Time), URL: /api-docs, Input Data: {}"}
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 403, message: Name should not be empty}"}
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 403, message: Name should not be empty}"}
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 403, message: Name should not be empty, Password should not be empty}"}
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 403, message: Name should not be empty, Enter valid email, Password should not be empty}"}
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 403, message: Enter valid email, Password should not be empty}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 403, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 403, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 403, message: Password should not be empty}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 403, message: Password should not be empty}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:25:41 GMT+0530 (India Standard Time), URL: /api/post/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:26:02 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:26:14 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:26:39 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:28:33 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:32:21 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:35:33 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:35:42 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:35:47 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:35:56 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:36:05 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:36:20 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:37:17 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:37:57 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:40:16 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:40:24 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:41:04 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:41:57 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:42:06 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:43:30 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:45:30 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:45:50 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:45:54 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:48:38 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:48:47 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:51:10 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 03:52:03 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:09:14 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:09:19 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:09:26 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:09:32 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:09:38 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:12:33 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:12:46 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:12:48 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:12:55 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:13:18 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:13:20 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:13:46 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:13:48 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:13:58 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 04:14:12 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 05:06:51 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sun Jul 14 2024 05:09:37 GMT+0530 (India Standard Time), URL: /api/post/, Input Data: {}"}

@@ -1,1 +1,48 @@
 
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 403, message: Name should not be empty}"}
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 403, message: Name should not be empty}"}
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 403, message: Name should not be empty, Password should not be empty}"}
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 403, message: Name should not be empty, Enter valid email, Password should not be empty}"}
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 403, message: Enter valid email, Password should not be empty}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 403, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 403, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 403, message: Password should not be empty}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 403, message: Password should not be empty}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/user/signup, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/user/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
