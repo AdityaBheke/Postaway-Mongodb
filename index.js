@@ -2,6 +2,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
+import swagger from 'swagger-ui-express';
 
 // Internal imports
 import userRouter from './src/features/user/user.router.js';
@@ -10,6 +11,7 @@ import commentRouter from './src/features/comment/comment.router.js';
 import likeRouter from './src/features/like/like.router.js';
 import { errorHandler } from './src/errorHandler/errorHandler.middleware.js';
 import { loggerMiddleware } from './src/middlewares/logger.middleware.js';
+import swaggerJson from './public/docs/swagger.json' assert {type: 'json'};
 
 
 // Setup
@@ -17,6 +19,8 @@ const server = express();
 server.use(bodyParser.json());
 server.use(cookieParser());
 
+// Swagger docs
+server.use('/api-docs', swagger.serve, swagger.setup(swaggerJson));
 server.use(loggerMiddleware);
 //Custom Routes
 server.use('/api/user', userRouter);
