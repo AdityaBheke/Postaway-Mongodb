@@ -351,6 +351,164 @@
                         }
                     }
                 }
+            },
+            "get":{
+                "tags": [
+                    "Post"
+                ],
+                "summary": "Get post by User id",
+                "description": "Get all posts posted by a pparticular user",
+                "security": [
+                    { "jwtAuth": {} }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns an object containing success status and an array of posts",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Posts of UserId 0 fetched"
+                                        },
+                                        "posts": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "userId": {
+                                                        "type": "number",
+                                                        "example": 0
+                                                    },
+                                                    "caption": {
+                                                        "type": "string",
+                                                        "example": "This is sample caption"
+                                                    },
+                                                    "imageUrl": {
+                                                        "type": "string",
+                                                        "example": "sampleImage4.jpg"
+                                                    },
+                                                    "id": {
+                                                        "type": "number",
+                                                        "example": 0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Returns error message for invalid token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 401
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Token expired/ Bad request Token not available"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/post/all":{
+            "get":{
+                "tags":["Post"],
+                "summary":"Get all posts",
+                "description":"Get all Posts",
+                "security": [
+                    { "jwtAuth": {} }
+                ],
+                "responses":{
+                    "200": {
+                        "description": "Returns an object containing success status and an array of posts",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "All posts fetched"
+                                        },
+                                        "posts": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "userId": {
+                                                        "type": "number",
+                                                        "example": 0
+                                                    },
+                                                    "caption": {
+                                                        "type": "string",
+                                                        "example": "This is sample caption"
+                                                    },
+                                                    "imageUrl": {
+                                                        "type": "string",
+                                                        "example": "sampleImage4.jpg"
+                                                    },
+                                                    "id": {
+                                                        "type": "number",
+                                                        "example": 0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Returns error message for invalid token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 401
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Token expired/ Bad request Token not available"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
