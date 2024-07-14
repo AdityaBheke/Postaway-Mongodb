@@ -30,7 +30,7 @@ export default class CommentController{
         if (comment) {
             res.status(201).send({status:true, message: `Comment with id ${comment.id} updated for Post with id ${comment.postId}`, comment: comment});
         } else {
-            throw new customError(400, `You cannot update other user's comment`);
+            throw new customError(403, `You cannot update other user's comment`);
         }
     }
     deleteComment(req,res){
@@ -38,9 +38,9 @@ export default class CommentController{
         const commentId = req.params.id;
         const comment = CommentModel.deleteComment(userId, commentId);
         if (comment) {
-            res.status(201).send({status:true, message: `Comment with id ${commentId} deleted for Post with id ${comment.postId}`, comment: comment});
+            res.status(201).send({status:true, message: `Comment with id ${commentId} deleted for Post with id ${comment[0].postId}`, comment: comment[0]});
         } else {
-            throw new customError(400, `You cannot delete other user's comment`);
+            throw new customError(403, `You cannot delete other user's comment`);
         }
     }
 }
