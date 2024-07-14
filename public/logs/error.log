@@ -46,3 +46,52 @@
 {"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
 {"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
 {"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/all, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/ik, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/post/0, Error: {status: false, errorCode: 404, message: Post with id 0 not found}"}
+{"level":"error","message":"URL: /api/post/-1, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/post/9, Error: {status: false, errorCode: 404, message: Post with id 9 not found}"}
+{"level":"error","message":"URL: /api/post/kl, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/post/0, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/%7Bid%7D, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/post/%7Bid%7D, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/post/9, Error: {status: false, errorCode: 404, message: Post with id 9 not found}"}
+{"level":"error","message":"URL: /api/post/0, Error: {status: false, errorCode: 404, message: Unable to delete post with id 0}"}
+{"level":"error","message":"URL: /api/post/9, Error: {status: false, errorCode: 404, message: Unable to delete post with id 9}"}
+{"level":"error","message":"URL: /api/post/4, Error: {status: false, errorCode: 404, message: Unable to delete post with id 4}"}
+{"level":"error","message":"URL: /api/post/3, Error: {status: false, errorCode: 404, message: Unable to delete post with id 3}"}
+{"level":"error","message":"URL: /api/post/-1, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/post/0, Error: {status: false, errorCode: 404, message: Unable to delete post with id 0}"}
+{"level":"error","message":"URL: /api/post/%7Bid%7D, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/post/%7Bid%7D, Error: {status: false, errorCode: 400, message: Invalid post id, File should not be empty}"}
+{"level":"error","message":"URL: /api/post/-1, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/post/4, Error: {status: false, errorCode: 404, message: Unable to update post with id 4}"}
+{"level":"error","message":"URL: /api/comment/%7Bid%7D, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/comment/%7Bid%7D, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/comment/0, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/comment/0, Error: {status: false, errorCode: 404, message: Post with id 0 not found}"}
+{"level":"error","message":"URL: /api/comment/-1, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/comment/0, Error: {status: false, errorCode: 404, message: Post with id 0 not found}"}
+{"level":"error","message":"URL: /api/comment/-1, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/comment/-1, Error: {status: false, errorCode: 400, message: Invalid post id, Comment cannot be empty}"}
+{"level":"error","message":"URL: /api/comment/9, Error: {status: false, errorCode: 404, message: Post with id 9 not found}"}
+{"level":"error","message":"URL: /api/comment/%7Bid%7D, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/comment/0, Error: {status: false, errorCode: 404, message: Post with id 0 not found}"}
+{"level":"error","message":"URL: /api/comment/-1, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/comment/4, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/comment/4, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/comment/-2, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/comment/99, Error: {status: false, errorCode: 404, message: Post with id 99 not found}"}
+{"level":"error","message":"URL: /api/comment/%7Bid%7D, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/comment/%7Bid%7D, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/comment/1, Error: {status: false, errorCode: 400, message: Comment cannot be empty}"}
+{"level":"error","message":"URL: /api/comment/6, Error: {status: false, errorCode: 403, message: You cannot update other user's comment}"}
+{"level":"error","message":"URL: /api/comment/99, Error: {status: false, errorCode: 403, message: You cannot update other user's comment}"}
+{"level":"error","message":"URL: /api/comment/%7Bid%7D, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/comment/%7Bid%7D, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/comment/-1, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/comment/9, Error: {status: false, errorCode: 403, message: You cannot delete other user's comment}"}
+{"level":"error","message":"URL: /api/comment/5, Error: {status: false, errorCode: 403, message: You cannot delete other user's comment}"}

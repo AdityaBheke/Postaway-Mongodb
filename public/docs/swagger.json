@@ -128,10 +128,12 @@
                                 "type": "object",
                                 "properties": {
                                     "email": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "example": "aditya@gmail.com"
                                     },
                                     "password": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "example": "Aditya1234"
                                     }
                                 }
                             }
@@ -171,9 +173,9 @@
                                                 }
                                             }
                                         },
-                                        "token":{
-                                            "type":"string",
-                                            "example":"eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp..."
+                                        "token": {
+                                            "type": "string",
+                                            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp..."
                                         }
                                     }
                                 }
@@ -239,10 +241,12 @@
                 "summary": "Create post api",
                 "description": "Create post api description",
                 "security": [
-                    { "jwtAuth": {} }
+                    {
+                        "jwtAuth": {}
+                    }
                 ],
                 "requestBody": {
-                    "description": "Product information and image",
+                    "description": "post information and image",
                     "content": {
                         "multipart/form-data": {
                             "schema": {
@@ -352,14 +356,16 @@
                     }
                 }
             },
-            "get":{
+            "get": {
                 "tags": [
                     "Post"
                 ],
                 "summary": "Get post by User id",
                 "description": "Get all posts posted by a pparticular user",
                 "security": [
-                    { "jwtAuth": {} }
+                    {
+                        "jwtAuth": {}
+                    }
                 ],
                 "responses": {
                     "200": {
@@ -432,15 +438,19 @@
                 }
             }
         },
-        "/api/post/all":{
-            "get":{
-                "tags":["Post"],
-                "summary":"Get all posts",
-                "description":"Get all Posts",
-                "security": [
-                    { "jwtAuth": {} }
+        "/api/post/all": {
+            "get": {
+                "tags": [
+                    "Post"
                 ],
-                "responses":{
+                "summary": "Get all posts",
+                "description": "Get all Posts",
+                "security": [
+                    {
+                        "jwtAuth": {}
+                    }
+                ],
+                "responses": {
                     "200": {
                         "description": "Returns an object containing success status and an array of posts",
                         "content": {
@@ -478,6 +488,1015 @@
                                                     }
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Returns error message for invalid token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 401
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Token expired/ Bad request Token not available"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/post/{id}": {
+            "get": {
+                "tags": [
+                    "Post"
+                ],
+                "summary": "Get post by Post id",
+                "description": "Get post by Post id",
+                "security": [
+                    {
+                        "jwtAuth": {}
+                    }
+                ],
+                "parameters": [
+                    {
+                        "description": "id of the post to retrive",
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns an object containing success status and details of a post",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Posts with id 0 fetched"
+                                        },
+                                        "post": {
+                                            "type": "object",
+                                            "properties": {
+                                                "userId": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                },
+                                                "caption": {
+                                                    "type": "string",
+                                                    "example": "This is sample caption"
+                                                },
+                                                "imageUrl": {
+                                                    "type": "string",
+                                                    "example": "sampleImage4.jpg"
+                                                },
+                                                "id": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Returns error message if post with provided id not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 404
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "post with id 0 not found"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Returns error message for invalid id",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 400
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Invalid post id"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Returns error message for invalid token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 401
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Token expired/ Bad request Token not available"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Post"
+                ],
+                "summary": "Update post by Post id",
+                "description": "Update post by Post id",
+                "security": [
+                    {
+                        "jwtAuth": {}
+                    }
+                ],
+                "parameters": [
+                    {
+                        "description": "id of the post to Update",
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "post information and image",
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "caption": {
+                                        "type": "string",
+                                        "example": "This is sample caption"
+                                    },
+                                    "imageUrl": {
+                                        "type": "string",
+                                        "format": "binary"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Returns an object containing success status and details of the Updated post",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Posts with id 0 updated"
+                                        },
+                                        "post": {
+                                            "type": "object",
+                                            "properties": {
+                                                "userId": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                },
+                                                "caption": {
+                                                    "type": "string",
+                                                    "example": "This is updated caption"
+                                                },
+                                                "imageUrl": {
+                                                    "type": "string",
+                                                    "example": "updatedImage.jpg"
+                                                },
+                                                "id": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Returns error message if post with provided id not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 404
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Unable to update post with id 0"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Returns error message for invalid id",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 400
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Invalid post id, File should not be empty"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Returns error message for invalid token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 401
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Token expired/ Bad request Token not available"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Post"
+                ],
+                "summary": "Delete post by Post id",
+                "description": "Delete post by Post id",
+                "security": [
+                    {
+                        "jwtAuth": {}
+                    }
+                ],
+                "parameters": [
+                    {
+                        "description": "id of the post to delete",
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Returns an object containing success status and details of the deleted post",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Posts with id 0 deleted"
+                                        },
+                                        "post": {
+                                            "type": "object",
+                                            "properties": {
+                                                "userId": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                },
+                                                "caption": {
+                                                    "type": "string",
+                                                    "example": "This is sample caption"
+                                                },
+                                                "imageUrl": {
+                                                    "type": "string",
+                                                    "example": "sampleImage4.jpg"
+                                                },
+                                                "id": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Returns error message if post with provided id not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 404
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Unable to delete post with id 0"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Returns error message for invalid id",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 400
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Invalid post id"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Returns error message for invalid token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 401
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Token expired/ Bad request Token not available"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/comment/{id}": {
+            "post": {
+                "tags": [
+                    "Comment"
+                ],
+                "summary": "Add comment api",
+                "description": "Add comment by passing post id and comment content",
+                "security": [
+                    {
+                        "jwtAuth": {}
+                    }
+                ],
+                "parameters": [
+                    {
+                        "description": "id of the post to add a comment",
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "Comment content",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "content": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Returns an object containing success status and details of the comment",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Comment added to Post with id 0"
+                                        },
+                                        "comment": {
+                                            "type": "object",
+                                            "properties": {
+                                                "userId": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                },
+                                                "postId": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                },
+                                                "content": {
+                                                    "type": "string",
+                                                    "example": "This is sample comment"
+                                                },
+                                                "id": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Returns error message for invalid id or comment is empty",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 400
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Invalid post id, Comment cannot be empty"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Returns error message for invalid token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 401
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Token expired/ Bad request Token not available"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Returns error message if post with provided id not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 404
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Post with id 0 not found"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "tags": [
+                    "Comment"
+                ],
+                "summary": "Get comments api",
+                "description": "Get all comments of a specific post by passing post id",
+                "security": [
+                    {
+                        "jwtAuth": {}
+                    }
+                ],
+                "parameters": [
+                    {
+                        "description": "id of the post to get its all comments",
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns an object containing success status and details of all comments",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "All comments fetched for Post with id 0"
+                                        },
+                                        "comments": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "userId": {
+                                                        "type": "number",
+                                                        "example": 0
+                                                    },
+                                                    "postId": {
+                                                        "type": "number",
+                                                        "example": 0
+                                                    },
+                                                    "content": {
+                                                        "type": "string",
+                                                        "example": "This is sample comment"
+                                                    },
+                                                    "id": {
+                                                        "type": "number",
+                                                        "example": 0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Returns error message for invalid id",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 400
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Invalid post id"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Returns error message if post with provided id not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 404
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Post with id 0 not found"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Returns error message for invalid token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 401
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Token expired/ Bad request Token not available"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put":{
+                "tags":[
+                    "Comment"
+                ],
+                "summary": "Update comment",
+                "description":"Api to update comment by passing comment id and comment content",
+                "security": [
+                    {
+                        "jwtAuth": {}
+                    }
+                ],
+                "parameters": [
+                    {
+                        "description": "id of the comment to update",
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "Comment content",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "content": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Returns an object containing success status and details of the updated comment",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Comment with id 0 updated for Post with id 0"
+                                        },
+                                        "comment": {
+                                            "type": "object",
+                                            "properties": {
+                                                "userId": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                },
+                                                "postId": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                },
+                                                "content": {
+                                                    "type": "string",
+                                                    "example": "This is updated comment"
+                                                },
+                                                "id": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Returns error message for invalid id or comment is empty",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 400
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Invalid post id/ Comment cannot be empty"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Returns error message if user try to update other's comment",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 403
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "You cannot update other user's comment"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Returns error message for invalid token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 401
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Token expired/ Bad request Token not available"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete":{
+                "tags":[
+                    "Comment"
+                ],
+                "summary": "Delete comment",
+                "description":"Api to delete comment by passing comment id and comment content",
+                "security": [
+                    {
+                        "jwtAuth": {}
+                    }
+                ],
+                "parameters": [
+                    {
+                        "description": "id of the comment to delete",
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Returns an object containing success status and details of the deleted comment",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Comment with id 0 deleted for Post with id 0"
+                                        },
+                                        "comment": {
+                                            "type": "object",
+                                            "properties": {
+                                                "userId": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                },
+                                                "postId": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                },
+                                                "content": {
+                                                    "type": "string",
+                                                    "example": "This is sample comment"
+                                                },
+                                                "id": {
+                                                    "type": "number",
+                                                    "example": 0
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Returns error message for invalid id",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 400
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Invalid post id"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Returns error message if user try to delete other's comment",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 403
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "You cannot delete other user's comment"
                                         }
                                     }
                                 }
