@@ -95,3 +95,14 @@
 {"level":"error","message":"URL: /api/comment/-1, Error: {status: false, errorCode: 400, message: Invalid post id}"}
 {"level":"error","message":"URL: /api/comment/9, Error: {status: false, errorCode: 403, message: You cannot delete other user's comment}"}
 {"level":"error","message":"URL: /api/comment/5, Error: {status: false, errorCode: 403, message: You cannot delete other user's comment}"}
+{"level":"error","message":"URL: /api/like/%7Bid%7D, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/like/-1, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/like/0, Error: {status: false, errorCode: 404, message: Post with id 0 not found}"}
+{"level":"error","message":"URL: /api/like/1, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/like/toggle/1, Error: {name: TypeError, message: Cannot read properties of undefined (reading 'like')}"}
+{"level":"error","message":"URL: /api/like/toggle/0, Error: {status: false, errorCode: 404, message: Post with id 0 not found}"}
+{"level":"error","message":"URL: /api/like/toggle/-1, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/like/toggle/%7Bid%7D, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/like/toggle/%7Bid%7D, Error: {status: false, errorCode: 400, message: Invalid post id}"}
+{"level":"error","message":"URL: /api/like/toggle/9, Error: {status: false, errorCode: 404, message: Post with id 9 not found}"}
+{"level":"error","message":"URL: /api/like/toggle/7, Error: {status: false, errorCode: 404, message: Post with id 7 not found}"}

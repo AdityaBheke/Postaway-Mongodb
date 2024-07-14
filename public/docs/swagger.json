@@ -1529,6 +1529,283 @@
                     }
                 }
             }
+        },
+        "/api/like/{id}":{
+            "get":{
+                "tags":[
+                    "Like"
+                ],
+                "summary":"Get Likes",
+                "description":"Get all likes of a particular post",
+                "security": [
+                    {
+                        "jwtAuth": {}
+                    }
+                ],
+                "parameters": [
+                    {
+                        "description": "Post id to get its all likes",
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description":"Returns an object containing success status and an array of likes of a particular post",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "type":"object",
+                                    "properties":{
+                                        "status":{
+                                            "type":"boolean",
+                                            "example":true
+                                        },
+                                        "message":{
+                                            "type":"string",
+                                            "example":"Likes for post with id 0 fetched"
+                                        },
+                                        "total":{
+                                            "type":"number",
+                                            "example":0
+                                        },
+                                        "likes":{
+                                            "type":"array",
+                                            "items":{
+                                                "type":"object",
+                                                "properties":{
+                                                    "userId":{
+                                                        "type":"number",
+                                                        "example":0
+                                                    },
+                                                    "postId":{
+                                                        "type":"number",
+                                                        "example":0
+                                                    },
+                                                    "id":{
+                                                        "type":"number",
+                                                        "example":0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Returns error message for invalid id",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 400
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Invalid post id"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Returns error message if post with provided id not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 404
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Post with id 0 not found"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Returns error message for invalid token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 401
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Token expired/ Bad request Token not available"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/like/toggle/{id}":{
+            "get":{
+                "tags":[
+                    "Like"
+                ],
+                "summary":"Toggle like",
+                "description":"Adds like to the post or removes if already liked",
+                "security": [
+                    {
+                        "jwtAuth": {}
+                    }
+                ],
+                "parameters": [
+                    {
+                        "description": "Post id to add or remove like",
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "responses":{
+                    "201":{
+                        "description":"Returns an object containing success status with message and added or removed object",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "type":"object",
+                                    "properties":{
+                                        "status":{
+                                            "type":"boolean",
+                                            "example":true
+                                        },
+                                        "message":{
+                                            "type":"string",
+                                            "example":"Like added for post with id 1/ Like removed for post with id 1"
+                                        },
+                                        "like":{
+                                            "type":"object",
+                                            "properties":{
+                                                "userId":{
+                                                    "type":"number",
+                                                    "example":0
+                                                },
+                                                "postId":{
+                                                    "type":"number",
+                                                    "example":0
+                                                },
+                                                "id":{
+                                                    "type":"number",
+                                                    "example":0
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Returns error message for invalid id",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 400
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Invalid post id"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Returns error message if post with provided id not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 404
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Post with id 0 not found"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Returns error message for invalid token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "errorCode": {
+                                            "type": "number",
+                                            "example": 401
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Token expired/ Bad request Token not available"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
