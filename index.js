@@ -21,6 +21,7 @@ server.use(cookieParser());
 
 // Swagger docs
 server.use('/api-docs', swagger.serve, swagger.setup(swaggerJson));
+// Logger
 server.use(loggerMiddleware);
 //Custom Routes
 server.use('/api/user', userRouter);
