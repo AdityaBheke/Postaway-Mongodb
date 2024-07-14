@@ -10,8 +10,8 @@ const postController = new PostController();
 
 postRouter.post('/', jwtAuth, fileUpload.single('imageUrl'), createPostValidator, postController.createPost);
 postRouter.get('/', jwtAuth, postController.getPostsByUserId);
-postRouter.get('/all', postController.getAllPosts);
-postRouter.get('/:id', postIdValidator, postController.getPostById);
+postRouter.get('/all', jwtAuth,  postController.getAllPosts);
+postRouter.get('/:id', jwtAuth,  postIdValidator, postController.getPostById);
 postRouter.put('/:id', jwtAuth, fileUpload.single('imageUrl'), updatePostValidator, postController.updatePost);
 postRouter.delete('/:id', jwtAuth, postIdValidator, postController.deletePost);
 
