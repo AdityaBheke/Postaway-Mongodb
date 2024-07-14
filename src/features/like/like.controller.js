@@ -18,9 +18,9 @@ export default class LikeController{
         if (!like) {
             throw new customError(404, `Post with id ${postId} not found`);
         } else if(like.status==1) {
-            res.status(201).send({status:true, message: `Like added for post with id ${postId}`, like: like});
+            res.status(201).send({status:true, message: `Like added for post with id ${postId}`, like: like.like});
         }else{
-            res.status(201).send({status:true, message: `Like removed for post with id ${postId}`, like: like});
+            res.status(201).send({status:true, message: `Like removed for post with id ${postId}`, like: like.like[0]});
         }
     }
 }
