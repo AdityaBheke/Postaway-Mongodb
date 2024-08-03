@@ -132,3 +132,38 @@
 {"level":"error","message":"URL: /api/users/update-details, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
 {"level":"error","message":"URL: /api/users/get-details/:userId, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \":userId\" (type string) at path \"_id\" for model \"User\"}"}
 {"level":"error","message":"URL: /api/users/get-details/66ae447302b2139a83385d22, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"aditya@gmail.com\" }}"}
+{"level":"error","message":"URL: /api/users/update-details, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"aditya@gmail.com\" }}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/posts, Error: {name: TypeError, message: Cannot read properties of undefined (reading 'repository')}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: caption: Caption cannot be empty}"}
+{"level":"error","message":"URL: /api/posts/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 400, message: Invalid post id, File should not be empty}"}
+{"level":"error","message":"URL: /api/posts/user/66ae69ba0158c02cf688989, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \"66ae69ba0158c02cf688989\" (type string) at path \"user\" for model \"Post\"}"}
+{"level":"error","message":"URL: /api/posts/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: Post not found}"}
+{"level":"error","message":"URL: /api/posts/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"error","message":"URL: /api/posts/66ae69ba0158c02cf688989, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \"66ae69ba0158c02cf688989\" (type string) at path \"_id\" for model \"Post\"}"}
+{"level":"error","message":"URL: /api/posts/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"error","message":"URL: /api/posts/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"error","message":"URL: /api/posts/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 403, message: Only post owner can update post}"}
+{"level":"error","message":"URL: /api/posts/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 403, message: Only post owner can update post}"}
+{"level":"error","message":"URL: /api/posts/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"error","message":"URL: /api/posts/66ae6cb5e96d534376984b65, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"error","message":"URL: /api/posts/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 403, message: Only post owner can update post}"}
+{"level":"error","message":"URL: /api/posts/66ae6f940f3a087fe0b2ffe6, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"error","message":"URL: /api/posts/66ae6f940f3a087fe0b2ffe6, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"aditya34@gmail.com\" }}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: User validation failed: name: Name should contain atleast 2 characters}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"joy@gmail.com\" }}"}
+{"level":"error","message":"URL: /api/posts/all, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: imageUrl: Image cannot be empty}"}
+{"level":"error","message":"URL: /api/posts/66ae77f1684c6f64fc13802d, Error: {status: false, errorCode: 404, message: Post not found}"}

@@ -17,11 +17,7 @@ export default class UserController{
             const hashedPassword = await bcrypt.hash(userData.password, 12);
             userData.password = hashedPassword;
             const result = await this.repository.signup(userData)
-            if (result.success) {
-                res.status(201).send(result);
-            } else {
-                 throw new customError(400, result.error);
-            }
+            res.status(201).send(result);
         } catch (error) {
             next(error);
         }

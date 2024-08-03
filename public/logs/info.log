@@ -267,3 +267,99 @@
 {"level":"error","message":"URL: /api/users/update-details, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
 {"level":"error","message":"URL: /api/users/get-details/:userId, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \":userId\" (type string) at path \"_id\" for model \"User\"}"}
 {"level":"error","message":"URL: /api/users/get-details/66ae447302b2139a83385d22, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"aditya@gmail.com\" }}"}
+{"level":"error","message":"URL: /api/users/update-details, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"aditya@gmail.com\" }}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:07:00 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {name: TypeError, message: Cannot read properties of undefined (reading 'repository')}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:15:00 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:15:25 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:16:10 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:16:29 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: File should not be empty}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:16:38 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: caption: Caption cannot be empty}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:17:13 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:18:11 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 400, message: Invalid post id, File should not be empty}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:20:36 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:20:46 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:20:52 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:21:06 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/user/66ae69ba0158c02cf688989, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \"66ae69ba0158c02cf688989\" (type string) at path \"user\" for model \"Post\"}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:22:34 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:22:55 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:23:27 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:23:31 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:23:37 GMT+0530 (India Standard Time), URL: /api/posts/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:23:44 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:23:54 GMT+0530 (India Standard Time), URL: /api/posts/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:25:16 GMT+0530 (India Standard Time), URL: /api/posts/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: Post not found}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:25:53 GMT+0530 (India Standard Time), URL: /api/posts/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:25:57 GMT+0530 (India Standard Time), URL: /api/posts/66ae69ba0158c02cf688989, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae69ba0158c02cf688989, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \"66ae69ba0158c02cf688989\" (type string) at path \"_id\" for model \"Post\"}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:26:04 GMT+0530 (India Standard Time), URL: /api/posts/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:26:10 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:26:22 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:26:35 GMT+0530 (India Standard Time), URL: /api/posts/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:26:42 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:26:54 GMT+0530 (India Standard Time), URL: /api/posts/66ae6cb5e96d534376984b65, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:27:01 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:27:40 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:28:32 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 403, message: Only post owner can update post}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:28:38 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 403, message: Only post owner can update post}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:29:11 GMT+0530 (India Standard Time), URL: /api/posts/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:29:25 GMT+0530 (India Standard Time), URL: /api/posts/66ae6f940f3a087fe0b2ffe6, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:30:07 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:30:14 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:30:21 GMT+0530 (India Standard Time), URL: /api/posts/66ae6cb5e96d534376984b65, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae6cb5e96d534376984b65, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:30:38 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 403, message: Only post owner can update post}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:30:50 GMT+0530 (India Standard Time), URL: /api/posts/66ae6f940f3a087fe0b2ffe6, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:30:58 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:31:11 GMT+0530 (India Standard Time), URL: /api/posts/66ae6f940f3a087fe0b2ffe6, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae6f940f3a087fe0b2ffe6, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:31:24 GMT+0530 (India Standard Time), URL: /api/posts/66ae6f940f3a087fe0b2ffe6, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae6f940f3a087fe0b2ffe6, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"aditya34@gmail.com\" }}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: User validation failed: name: Name should contain atleast 2 characters}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"joy@gmail.com\" }}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:42:14 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/all, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:43:11 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:44:24 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:44:38 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:45:55 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:47:11 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:51:59 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:55:54 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:56:06 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:58:52 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Aug 03 2024 23:59:06 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 00:00:58 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 00:03:08 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 00:03:17 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: imageUrl: Image cannot be empty}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 00:03:21 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 00:03:28 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 00:03:38 GMT+0530 (India Standard Time), URL: /api/posts/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 00:04:34 GMT+0530 (India Standard Time), URL: /api/posts/66ae77f1684c6f64fc13802d, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 00:04:43 GMT+0530 (India Standard Time), URL: /api/posts/66ae77f1684c6f64fc13802d, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae77f1684c6f64fc13802d, Error: {status: false, errorCode: 404, message: Post not found}"}

@@ -1,56 +1,74 @@
 import { customError } from "../../errorHandler/errorHandler.middleware.js";
 import PostModel from "./post.model.js";
+import PostRepository from "./post.repository.js";
 
 export default class PostController{
-    createPost(req, res){
+    constructor(){
+        this.repository = new PostRepository();
+    }
+    async createPost(req, res, next){
         const userId = req.userId;
         const caption = req.body.caption;
-        const imageUrl = req.file.filename;
-        const post = PostModel.createPost(userId, caption, imageUrl);
-        if (post) {
-            res.status(201).send({status:true, message: 'Post created', post: post})
-        } else {
-            throw new customError(400, 'Unable to create Post');
+        const imageUrl = req.file?.filename;
+        const postData = {
+            caption: caption,
+            imageUrl: imageUrl,
+            user: userId
+        }
+        try {
+            const result = await this.repository.createPost(postData);
+            res.status(201).send(result);
+        } catch (error) {
+            next(error);
         }
     }
-    getPostById(req, res){
+    async getPostById(req, res, next){
         const postId = req.params.id;
-        const post = PostModel.getPostById(postId);
-        if (post) {
-            res.status(200).send({status:true, message: `Post with id ${postId} fetched`, post: post});
-        } else {
-            throw new customError(404, `Post with id ${postId} not found`);
+        try {
+            const result = await this.repository.getPostById(postId);
+            res.status(200).send(result);
+        } catch (error) {
+            next(error);
         }
     }
-    getPostsByUserId(req, res){
-        const userId = req.userId;
-        const posts = PostModel.getPostsByUserId(userId);
-        res.status(200).send({status:true, message: `Posts of UserId ${userId} fetched`, posts: posts});
+    async getPostsByUserId(req, res, next){
+        const userId = req.params.userId;
+        try {
+            const result = await this.repository.getPostsByUserId(userId);
+            res.status(200).send(result);
+        } catch (error) {
+            next(error);
+        }
     }
-    getAllPosts(req,res){
-        const posts = PostModel.getAllPosts();
-        res.status(200).send({status:true, message: `All posts fetched`, posts: posts});
+    async getAllPosts(req, res, next){
+        try {
+            const result = await this.repository.getAllPosts();
+            res.status(200).send(result);
+        } catch (error) {
+            next(error);
+        }
     }
-    updatePost(req, res){
+    async updatePost(req, res, next){
         const userId = req.userId;
         const caption = req.body.caption;
-        const imageUrl = req.file.filename;
+        const imageUrl = req.file?.filename;
         const postId = req.params.id;
-        const post = PostModel.updatePost(userId, caption, imageUrl, postId);
-        if (post) {
-            res.status(201).send({status:true, message: `Post with id ${postId} updated`, post: post});
-        } else {
-            throw new customError(404, `Unable to update post with id ${postId}`);
+        const updateData = {caption, imageUrl};
+        try {
+            const result = await this.repository.updatePost(userId, postId, updateData);
+            res.status(201).send(result);
+        } catch (error) {
+            next(error);
         }
     }
-    deletePost(req, res){
+    async deletePost(req, res, next){
         const userId = req.userId;
         const postId = req.params.id;
-        const post = PostModel.deletePost(userId, postId);
-        if (post) {
-            res.status(201).send({status:true, message: `Post with id ${postId} deleted`, post: post});
-        } else {
-            throw new customError(404, `Unable to delete post with id ${postId}`);
+        try {
+            const result = await this.repository.deletePost(userId, postId);
+            res.status(201).send(result);
+        } catch (error) {
+            next(error)
         }
     }
 }
