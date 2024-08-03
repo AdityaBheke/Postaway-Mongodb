@@ -244,3 +244,26 @@
 {"level":"info","message":"TimeStamp: Sat Aug 03 2024 12:59:28 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
 {"level":"info","message":"TimeStamp: Sat Aug 03 2024 12:59:35 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
 {"level":"error","message":"URL: /api/posts/all, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"aditya@gmail.com\" }}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: User validation failed: name: Name should contain atleast 2 characters}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: User validation failed: age: Age must be between 0 to 100}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: User validation failed: name: Name should contain atleast 2 characters, age: Age must be between 0 to 100}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {name: TypeError, message: Cannot read properties of null (reading 'password')}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {name: Error, message: data and hash arguments required}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 400, message: User not found}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 400, message: User not found}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {name: TypeError, message: Cannot read properties of undefined (reading 'id')}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"aditya34@gmail.com\" }}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: Name should not be empty}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: User validation failed: name: Name should contain atleast 2 characters}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: User validation failed: age: Age must be between 0 to 100}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: Enter valid email}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: Password should not be empty}"}
+{"level":"error","message":"URL: /api/users/update-details, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/users/get-details/:userId, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \":userId\" (type string) at path \"_id\" for model \"User\"}"}
+{"level":"error","message":"URL: /api/users/get-details/66ae447302b2139a83385d22, Error: {status: false, errorCode: 404, message: User not found}"}

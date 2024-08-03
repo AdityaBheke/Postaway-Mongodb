@@ -19,6 +19,7 @@ const jwtAuth = (req, res, next)=>{
     try {
         const payload = jwt.verify(token,'EpGbiLNDm5');
         req.userId = payload.userId;
+        req.user = payload.user;
     } catch (error) {
         throw new customError(401, "Token expired");
     }

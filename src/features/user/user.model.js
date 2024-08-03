@@ -1,9 +1,10 @@
 export default class UserModel{
-    constructor(name, email, password, id){
-        this.id = id;
+    constructor(name, age, email, password, avatar){
         this.name = name;
+        this.age = age;
         this.email = email;
         this.password = password;
+        this.avatar = avatar;
     }
     static signup(name, email, password){
         const user = new UserModel(name, email, password);

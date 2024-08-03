@@ -12,6 +12,7 @@ import likeRouter from './src/features/like/like.router.js';
 import { errorHandler } from './src/errorHandler/errorHandler.middleware.js';
 import { loggerMiddleware } from './src/middlewares/logger.middleware.js';
 import swaggerJson from './public/docs/swagger.json' assert {type: 'json'};
+import { connectUsingMongoose } from './src/config/mongodb.config.js';
 
 
 // Setup
@@ -24,7 +25,7 @@ server.use('/api-docs', swagger.serve, swagger.setup(swaggerJson));
 // Logger
 server.use(loggerMiddleware);
 //Custom Routes
-server.use('/api/user', userRouter);
+server.use('/api/users', userRouter);
 server.use('/api/posts', postRouter);
 server.use('/api/comments', commentRouter);
 server.use('/api/likes', likeRouter);
@@ -41,4 +42,5 @@ server.use(errorHandler);
 // Listen
 server.listen(3000,()=>{
     console.log('Server is listening on port 3000');
+    connectUsingMongoose()
 })
