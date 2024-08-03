@@ -167,3 +167,17 @@
 {"level":"error","message":"URL: /api/posts/all, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
 {"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: imageUrl: Image cannot be empty}"}
 {"level":"error","message":"URL: /api/posts/66ae77f1684c6f64fc13802d, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"error","message":"URL: /api/posts/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"error","message":"URL: /api/comments/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/comments/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 400, message: deletedComment is not defined}"}
+{"level":"error","message":"URL: /api/comments/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 404, message: Comment not found}"}
+{"level":"error","message":"URL: /api/comments/66ae959a9680f7dce9dc67a0, Error: {status: false, errorCode: 403, message: Only comment owner can update comment}"}
+{"level":"error","message":"URL: /api/comments/66ae95d19680f7dce9dc67a8, Error: {status: false, errorCode: 404, message: Comment not found}"}
+{"level":"error","message":"URL: /api/comments/66ae959a9680f7dce9dc67a0, Error: {status: false, errorCode: 403, message: Only comment owner can update comment}"}
+{"level":"error","message":"URL: /api/comments/66ae95d19680f7dce9dc67a8, Error: {status: false, errorCode: 404, message: Comment not found}"}
+{"level":"error","message":"URL: /api/comments/66ae95d19680f7dce9dc67a8, Error: {status: false, errorCode: 404, message: Comment not found}"}
+{"level":"error","message":"URL: /api/comments/66ae959a9680f7dce9dc67a0, Error: {status: false, errorCode: 403, message: Only comment owner can update comment}"}
+{"level":"error","message":"URL: /api/comments/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 400, message: Comment validation failed: content: Comment cannot be empty}"}
+{"level":"error","message":"URL: /api/comments/66ae97b4b7326cf1c369a45d, Error: {status: false, errorCode: 400, message: Comment validation failed: content: Comment cannot be empty}"}
+{"level":"error","message":"URL: /api/comments/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 400, message: Cannot populate path `comment` because it is not in your schema. Set the `strictPopulate` option to false to override.}"}
+{"level":"error","message":"URL: /api/comments/66ae959a9680f7dce9dc67a0, Error: {status: false, errorCode: 403, message: Only comment owner can update comment}"}

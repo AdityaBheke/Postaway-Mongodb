@@ -1,46 +1,50 @@
 import CommentModel from "./comment.model.js";
 import { customError } from "../../errorHandler/errorHandler.middleware.js";
+import CommentRepository from "./comment.repository.js";
 
 export default class CommentController{
-    addComment(req, res){
+    constructor(){
+        this.repository = new CommentRepository();
+    }
+    async addComment(req, res, next){
         const userId = req.userId;
         const postId = req.params.id;
         const content = req.body.content;
-        const comment = CommentModel.createComment(userId, postId, content);
-        if (comment) {
-            res.status(201).send({status:true, message: `Comment added to Post with id ${postId}`, comment: comment});
-        } else {
-            throw new customError(404, `Post with id ${postId} not found`);
+        try {
+            const result = await this.repository.createComment(userId, postId, content);
+            res.status(201).send(result);
+        } catch (error) {
+            next(error);
         }
     }
-    getCommentsByPostId(req, res){
+    async getCommentsByPostId(req, res, next){
         const postId = req.params.id; 
-        const allComments = CommentModel.getCommentsByPostId(postId);
-        if (allComments) {
-            res.status(200).send({status:true, message: `All comments fetched for Post with id ${postId}`, comments: allComments});
-        } else {
-            throw new customError(404, `Post with id ${postId} not found`);
+        try {
+            const result = await this.repository.getCommentsByPostId(postId);
+            res.status(200).send(result);
+        } catch (error) {
+            next(error);
         }
     }
-    updateComment(req, res){
+    async updateComment(req, res, next){
         const userId = req.userId;
         const commentId = req.params.id;
         const content = req.body.content;
-        const comment = CommentModel.updateComment(userId, commentId, content);
-        if (comment) {
-            res.status(201).send({status:true, message: `Comment with id ${comment.id} updated for Post with id ${comment.postId}`, comment: comment});
-        } else {
-            throw new customError(403, `You cannot update other user's comment`);
+        try {
+            const result = await this.repository.updateComment(userId, commentId, content);
+            res.status(201).send(result);
+        } catch (error) {
+            next(error);
         }
     }
-    deleteComment(req,res){
+    async deleteComment(req, res, next){
         const userId = req.userId;
         const commentId = req.params.id;
-        const comment = CommentModel.deleteComment(userId, commentId);
-        if (comment) {
-            res.status(201).send({status:true, message: `Comment with id ${commentId} deleted for Post with id ${comment[0].postId}`, comment: comment[0]});
-        } else {
-            throw new customError(403, `You cannot delete other user's comment`);
+        try {
+            const result = await this.repository.deleteComment(userId, commentId);
+            res.status(201).send(result);
+        } catch (error) {
+            next(error);
         }
     }
 }

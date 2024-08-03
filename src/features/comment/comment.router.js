@@ -7,9 +7,17 @@ import { postIdValidator, commentContentValidator } from '../../middlewares/vali
 const commentRouter = express.Router();
 const commentController = new CommentController();
 
-commentRouter.post('/:id', jwtAuth, commentContentValidator, commentController.addComment);
-commentRouter.get('/:id', jwtAuth, postIdValidator, commentController.getCommentsByPostId);
-commentRouter.put('/:id', jwtAuth, commentContentValidator, commentController.updateComment);
-commentRouter.delete('/:id', jwtAuth, postIdValidator, commentController.deleteComment);
+commentRouter.post('/:id', jwtAuth, (req, res, next)=>{
+    commentController.addComment(req, res, next);
+});
+commentRouter.get('/:id', (req, res, next)=>{
+    commentController.getCommentsByPostId(req, res, next);
+});
+commentRouter.put('/:id', jwtAuth, (req, res, next)=>{
+    commentController.updateComment(req, res, next);
+});
+commentRouter.delete('/:id', jwtAuth, (req, res, next)=>{
+    commentController.deleteComment(req, res, next);
+});
 
 export default commentRouter;

@@ -363,3 +363,51 @@
 {"level":"info","message":"TimeStamp: Sun Aug 04 2024 00:04:34 GMT+0530 (India Standard Time), URL: /api/posts/66ae77f1684c6f64fc13802d, Input Data: {}"}
 {"level":"info","message":"TimeStamp: Sun Aug 04 2024 00:04:43 GMT+0530 (India Standard Time), URL: /api/posts/66ae77f1684c6f64fc13802d, Input Data: {}"}
 {"level":"error","message":"URL: /api/posts/66ae77f1684c6f64fc13802d, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 01:17:49 GMT+0530 (India Standard Time), URL: /api/posts/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:06:57 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:08:03 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {\"content\":\"Aditya's comment on Adi's post\"}"}
+{"level":"error","message":"URL: /api/comments/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:08:18 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {\"content\":\"Aditya's comment on Adi's post\"}"}
+{"level":"error","message":"URL: /api/comments/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 400, message: deletedComment is not defined}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:09:54 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {\"content\":\"Aditya's comment on Adi's post\"}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:10:27 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:10:49 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {\"content\":\"Aditya's 2nd comment on Adi's post\"}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:11:00 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:11:26 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:14:36 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:15:35 GMT+0530 (India Standard Time), URL: /api/comments/66ae959a9680f7dce9dc67a0, Input Data: {\"content\":\"Aditya's 1st comment on Adi's post\"}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:16:22 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"error","message":"URL: /api/comments/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 404, message: Comment not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:16:37 GMT+0530 (India Standard Time), URL: /api/comments/66ae95d19680f7dce9dc67a8, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:16:44 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:17:03 GMT+0530 (India Standard Time), URL: /api/comments/66ae959a9680f7dce9dc67a0, Input Data: {\"content\":\"Aditya's comment on Adi's post\"}"}
+{"level":"error","message":"URL: /api/comments/66ae959a9680f7dce9dc67a0, Error: {status: false, errorCode: 403, message: Only comment owner can update comment}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:17:13 GMT+0530 (India Standard Time), URL: /api/comments/66ae95d19680f7dce9dc67a8, Input Data: {}"}
+{"level":"error","message":"URL: /api/comments/66ae95d19680f7dce9dc67a8, Error: {status: false, errorCode: 404, message: Comment not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:17:28 GMT+0530 (India Standard Time), URL: /api/comments/66ae959a9680f7dce9dc67a0, Input Data: {}"}
+{"level":"error","message":"URL: /api/comments/66ae959a9680f7dce9dc67a0, Error: {status: false, errorCode: 403, message: Only comment owner can update comment}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:17:45 GMT+0530 (India Standard Time), URL: /api/comments/66ae95d19680f7dce9dc67a8, Input Data: {\"content\":\"Aditya's comment on Adi's post\"}"}
+{"level":"error","message":"URL: /api/comments/66ae95d19680f7dce9dc67a8, Error: {status: false, errorCode: 404, message: Comment not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:17:52 GMT+0530 (India Standard Time), URL: /api/comments/, Input Data: {\"content\":\"Aditya's comment on Adi's post\"}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:17:57 GMT+0530 (India Standard Time), URL: /api/comments/66ae95d19680f7dce9dc67a8, Input Data: {\"content\":\"Aditya's comment on Adi's post\"}"}
+{"level":"error","message":"URL: /api/comments/66ae95d19680f7dce9dc67a8, Error: {status: false, errorCode: 404, message: Comment not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:18:16 GMT+0530 (India Standard Time), URL: /api/comments/66ae959a9680f7dce9dc67a0, Input Data: {\"content\":\"\"}"}
+{"level":"error","message":"URL: /api/comments/66ae959a9680f7dce9dc67a0, Error: {status: false, errorCode: 403, message: Only comment owner can update comment}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:18:46 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {\"content\":\"\"}"}
+{"level":"error","message":"URL: /api/comments/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 400, message: Comment validation failed: content: Comment cannot be empty}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:18:52 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {\"content\":\"Adi's 1st comment on Adi's post\"}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:19:02 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:19:20 GMT+0530 (India Standard Time), URL: /api/comments/66ae97b4b7326cf1c369a45d, Input Data: {\"content\":\"\"}"}
+{"level":"error","message":"URL: /api/comments/66ae97b4b7326cf1c369a45d, Error: {status: false, errorCode: 400, message: Comment validation failed: content: Comment cannot be empty}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:19:52 GMT+0530 (India Standard Time), URL: /api/comments/66ae97b4b7326cf1c369a45d, Input Data: {\"content\":\"Adi's 1st comment on his own post\"}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:20:26 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {\"content\":\"Adi's 2nd comment on Adi's post\"}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:20:44 GMT+0530 (India Standard Time), URL: /api/comments/66ae9812b7326cf1c369a468, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:36:47 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"error","message":"URL: /api/comments/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 400, message: Cannot populate path `comment` because it is not in your schema. Set the `strictPopulate` option to false to override.}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:37:15 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:38:22 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:38:46 GMT+0530 (India Standard Time), URL: /api/comments/66ae97b4b7326cf1c369a45d, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:38:54 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:39:05 GMT+0530 (India Standard Time), URL: /api/comments/66ae959a9680f7dce9dc67a0, Input Data: {}"}
+{"level":"error","message":"URL: /api/comments/66ae959a9680f7dce9dc67a0, Error: {status: false, errorCode: 403, message: Only comment owner can update comment}"}
