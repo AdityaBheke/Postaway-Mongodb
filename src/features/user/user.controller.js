@@ -24,4 +24,8 @@ export default class UserController{
             throw new customError(401, 'Invalid credentials');
         }
     }
+    logoutUser(req, res){
+        res.cookie('jwtToken', '');
+        res.status(200).send("User logged out successfully");
+    }
 }
