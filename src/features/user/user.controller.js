@@ -16,7 +16,7 @@ export default class UserController{
         const result = UserModel.signin(email, password);
         if (result.status) {
             const token = jwt.sign({userId:result.user.id},'EpGbiLNDm5',{expiresIn:'1h'});
-            // res.cookie('jwtToken', token);
+            res.cookie('jwtToken', token);
             result.token = token;
             res.status(200).send(result);
         } else {

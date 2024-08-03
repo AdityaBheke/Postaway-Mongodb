@@ -25,9 +25,9 @@ server.use('/api-docs', swagger.serve, swagger.setup(swaggerJson));
 server.use(loggerMiddleware);
 //Custom Routes
 server.use('/api/user', userRouter);
-server.use('/api/post', postRouter);
-server.use('/api/comment', commentRouter);
-server.use('/api/like', likeRouter);
+server.use('/api/posts', postRouter);
+server.use('/api/comments', commentRouter);
+server.use('/api/likes', likeRouter);
 
 // Default Routes
 server.get('/',(req,res)=>{
@@ -39,6 +39,6 @@ server.use((req,res)=>{
 server.use(errorHandler);
 
 // Listen
-server.listen(3100,()=>{
-    console.log('Server is listening on port 3100');
+server.listen(3000,()=>{
+    console.log('Server is listening on port 3000');
 })
