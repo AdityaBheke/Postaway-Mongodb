@@ -181,3 +181,28 @@
 {"level":"error","message":"URL: /api/comments/66ae97b4b7326cf1c369a45d, Error: {status: false, errorCode: 400, message: Comment validation failed: content: Comment cannot be empty}"}
 {"level":"error","message":"URL: /api/comments/66ae6c9ce96d534376984b63, Error: {status: false, errorCode: 400, message: Cannot populate path `comment` because it is not in your schema. Set the `strictPopulate` option to false to override.}"}
 {"level":"error","message":"URL: /api/comments/66ae959a9680f7dce9dc67a0, Error: {status: false, errorCode: 403, message: Only comment owner can update comment}"}
+{"level":"error","message":"URL: /api/likes/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"error","message":"URL: /api/likes/toggle/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"error","message":"URL: /api/friends/get-friends/:userId, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \":userId\" (type string) at path \"_id\" for model \"User\"}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: Class constructor ObjectId cannot be invoked without 'new'}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: Class constructor ObjectId cannot be invoked without 'new'}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: Class constructor ObjectId cannot be invoked without 'new'}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: You cannot send request to yourself}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e%20, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \"66ae69ba0158c02cf688989e \" (type string) at path \"_id\" for model \"User\"}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: You cannot send request to yourself}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 400, message: Cannot read properties of null (reading 'status')}"}
+{"level":"error","message":"URL: /api/friends/response-to-request/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 404, message: Friend request not found}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 400, message: Cannot populate path `sender,` because it is not in your schema. Set the `strictPopulate` option to false to override.}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 400, message: Cannot populate path `sender,` because it is not in your schema. Set the `strictPopulate` option to false to override.}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 400, message: You cannot send request to yourself}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: You already have a pending request from this user}"}
+{"level":"error","message":"URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Error: {status: false, errorCode: 404, message: Friend request not found}"}
+{"level":"error","message":"URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Error: {status: false, errorCode: 404, message: Friend request not found}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66afb82c15434341f9db730f, Error: {status: false, errorCode: 404, message: Receiver not found}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 400, message: You already have a pending request from this user}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: You already have a pending request from this user}"}
+{"level":"error","message":"URL: /api/friends/response-to-request/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 404, message: Friend request not found}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: You cannot send request to yourself}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66afb93215434341f9db7348, Error: {status: false, errorCode: 404, message: Receiver not found}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae7138ef95b9df3d39dd41, Error: {status: false, errorCode: 400, message: You already have a pending request from this user}"}
+{"level":"error","message":"URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Error: {status: false, errorCode: 404, message: Friend request not found}"}

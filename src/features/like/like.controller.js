@@ -1,26 +1,28 @@
 import LikeModel from "./like.model.js";
 import { customError } from "../../errorHandler/errorHandler.middleware.js";
+import LikeRepository from "./like.repository.js";
 
 export default class LikeController{
-    getLikesByPostId(req, res){
+    constructor(){
+        this.repository = new LikeRepository();
+    }
+    async getLikesByPostId(req, res, next){
         const postId = req.params.id;
-        const likes = LikeModel.getLikesByPostId(postId);
-        if (likes) {
-            res.status(200).send({status:true, message: `Likes for post with id ${postId} fetched`, total: likes.length, likes: likes});
-        } else {
-            throw new customError(404, `Post with id ${postId} not found`);
+        try {
+            const result = await this.repository.getLikesByPostId(postId);
+            res.status(200).send(result);
+        } catch (error) {
+            next(error)
         }
     }
-    toggleLike(req, res){
+    async toggleLike(req, res, next){
         const userId = req.userId;
         const postId = req.params.id;
-        const like = LikeModel.toggleLike(userId, postId);
-        if (!like) {
-            throw new customError(404, `Post with id ${postId} not found`);
-        } else if(like.status==1) {
-            res.status(201).send({status:true, message: `Like added for post with id ${postId}`, like: like.like});
-        }else{
-            res.status(201).send({status:true, message: `Like removed for post with id ${postId}`, like: like.like[0]});
+        try {
+            const result = await this.repository.toggleLike(postId, userId);
+            res.status(201).send(result);
+        } catch (error) {
+            next(error);
         }
     }
 }

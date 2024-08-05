@@ -7,7 +7,11 @@ import { postIdValidator } from '../../middlewares/validation.middleware.js';
 const likeRouter = express.Router();
 const likeController = new LikeController();
 
-likeRouter.get('/:id', jwtAuth,  postIdValidator, likeController.getLikesByPostId);
-likeRouter.get('/toggle/:id', jwtAuth, postIdValidator, likeController.toggleLike);
+likeRouter.get('/:id', (req, res, next)=>{
+    likeController.getLikesByPostId(req, res, next);
+});
+likeRouter.post('/toggle/:id', jwtAuth, (req, res, next)=>{
+    likeController.toggleLike(req, res, next);
+});
 
 export default likeRouter;

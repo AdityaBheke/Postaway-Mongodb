@@ -411,3 +411,99 @@
 {"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:38:54 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
 {"level":"info","message":"TimeStamp: Sun Aug 04 2024 02:39:05 GMT+0530 (India Standard Time), URL: /api/comments/66ae959a9680f7dce9dc67a0, Input Data: {}"}
 {"level":"error","message":"URL: /api/comments/66ae959a9680f7dce9dc67a0, Error: {status: false, errorCode: 403, message: Only comment owner can update comment}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:33:34 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:34:11 GMT+0530 (India Standard Time), URL: /api/likes/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"error","message":"URL: /api/likes/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:34:20 GMT+0530 (India Standard Time), URL: /api/likes/toggle/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:35:00 GMT+0530 (India Standard Time), URL: /api/likes/toggle/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"error","message":"URL: /api/likes/toggle/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 404, message: Post not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:35:17 GMT+0530 (India Standard Time), URL: /api/likes/66ae77e4684c6f64fc138029, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:35:29 GMT+0530 (India Standard Time), URL: /api/likes/toggle/66ae77e4684c6f64fc138029, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:35:33 GMT+0530 (India Standard Time), URL: /api/likes/66ae77e4684c6f64fc138029, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:36:50 GMT+0530 (India Standard Time), URL: /api/likes/66ae77e4684c6f64fc138029, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:36:57 GMT+0530 (India Standard Time), URL: /api/likes/toggle/66ae77e4684c6f64fc138029, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:37:07 GMT+0530 (India Standard Time), URL: /api/likes/66ae77e4684c6f64fc138029, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:37:11 GMT+0530 (India Standard Time), URL: /api/likes/toggle/66ae77e4684c6f64fc138029, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 13:37:24 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/get-friends/:userId, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \":userId\" (type string) at path \"_id\" for model \"User\"}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 21:33:21 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:20:41 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:20:56 GMT+0530 (India Standard Time), URL: /api/friends/get-friends/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:30:04 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:30:12 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: Class constructor ObjectId cannot be invoked without 'new'}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:31:01 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: Class constructor ObjectId cannot be invoked without 'new'}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:32:18 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: Class constructor ObjectId cannot be invoked without 'new'}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:34:53 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: You cannot send request to yourself}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:35:03 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e%20, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e%20, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \"66ae69ba0158c02cf688989e \" (type string) at path \"_id\" for model \"User\"}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:35:11 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: You cannot send request to yourself}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:35:50 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 400, message: Cannot read properties of null (reading 'status')}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:38:21 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:38:36 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:38:41 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:39:02 GMT+0530 (India Standard Time), URL: /api/friends/response-to-request/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:39:38 GMT+0530 (India Standard Time), URL: /api/friends/response-to-request/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/response-to-request/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 404, message: Friend request not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:40:28 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 400, message: Cannot populate path `sender,` because it is not in your schema. Set the `strictPopulate` option to false to override.}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:41:46 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 400, message: Cannot populate path `sender,` because it is not in your schema. Set the `strictPopulate` option to false to override.}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:42:20 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:42:47 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 400, message: You cannot send request to yourself}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:43:05 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: You already have a pending request from this user}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:43:21 GMT+0530 (India Standard Time), URL: /api/friends/response-to-request/66ae69ba0158c02cf688989e, Input Data: {\"response\":true}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:43:45 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:44:02 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:44:07 GMT+0530 (India Standard Time), URL: /api/friends/get-friends/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:49:28 GMT+0530 (India Standard Time), URL: /api/friends/get-friends/66ae7138ef95b9df3d39dd41, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:49:40 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae7138ef95b9df3d39dd41, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:49:54 GMT+0530 (India Standard Time), URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Input Data: {\"response\":true}"}
+{"level":"error","message":"URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Error: {status: false, errorCode: 404, message: Friend request not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:50:37 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:50:47 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae7138ef95b9df3d39dd41, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:50:54 GMT+0530 (India Standard Time), URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Input Data: {\"response\":true}"}
+{"level":"error","message":"URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Error: {status: false, errorCode: 404, message: Friend request not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:51:35 GMT+0530 (India Standard Time), URL: /api/friends/get-friends/66ae7138ef95b9df3d39dd41, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:51:42 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:52:06 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66afb82c15434341f9db730f, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66afb82c15434341f9db730f, Error: {status: false, errorCode: 404, message: Receiver not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:52:30 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69f10158c02cf68898a2, Error: {status: false, errorCode: 400, message: You already have a pending request from this user}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:52:41 GMT+0530 (India Standard Time), URL: /api/friends/response-to-request/66ae69f10158c02cf68898a2, Input Data: {\"response\":true}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:52:59 GMT+0530 (India Standard Time), URL: /api/friends/get-friends/66ae7138ef95b9df3d39dd41, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:53:10 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:53:28 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: You already have a pending request from this user}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:53:42 GMT+0530 (India Standard Time), URL: /api/friends/response-to-request/66ae69ba0158c02cf688989e, Input Data: {\"response\":false}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:53:50 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:53:56 GMT+0530 (India Standard Time), URL: /api/friends/get-friends/66ae7138ef95b9df3d39dd41, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:54:02 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:54:40 GMT+0530 (India Standard Time), URL: /api/friends/get-friends/66ae69f10158c02cf68898a2, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:54:49 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:55:02 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:55:12 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:55:21 GMT+0530 (India Standard Time), URL: /api/friends/response-to-request/66ae69ba0158c02cf688989e, Input Data: {\"response\":false}"}
+{"level":"error","message":"URL: /api/friends/response-to-request/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 404, message: Friend request not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:56:42 GMT+0530 (India Standard Time), URL: /api/friends/get-friends/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:56:49 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:57:11 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae69ba0158c02cf688989e, Error: {status: false, errorCode: 400, message: You cannot send request to yourself}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:57:25 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66afb93215434341f9db7348, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66afb93215434341f9db7348, Error: {status: false, errorCode: 404, message: Receiver not found}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:57:40 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae7138ef95b9df3d39dd41, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/toggle-friendship/66ae7138ef95b9df3d39dd41, Error: {status: false, errorCode: 400, message: You already have a pending request from this user}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:57:52 GMT+0530 (India Standard Time), URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Input Data: {\"response\":true}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 22:59:55 GMT+0530 (India Standard Time), URL: /api/friends/get-friends/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 23:00:08 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 23:00:14 GMT+0530 (India Standard Time), URL: /api/friends/toggle-friendship/66ae7138ef95b9df3d39dd41, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 23:00:20 GMT+0530 (India Standard Time), URL: /api/friends/get-friends/66ae69ba0158c02cf688989e, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sun Aug 04 2024 23:00:30 GMT+0530 (India Standard Time), URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Input Data: {\"response\":true}"}
+{"level":"error","message":"URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Error: {status: false, errorCode: 404, message: Friend request not found}"}
