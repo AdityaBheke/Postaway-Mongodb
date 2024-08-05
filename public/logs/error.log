@@ -206,3 +206,25 @@
 {"level":"error","message":"URL: /api/friends/toggle-friendship/66afb93215434341f9db7348, Error: {status: false, errorCode: 404, message: Receiver not found}"}
 {"level":"error","message":"URL: /api/friends/toggle-friendship/66ae7138ef95b9df3d39dd41, Error: {status: false, errorCode: 400, message: You already have a pending request from this user}"}
 {"level":"error","message":"URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Error: {status: false, errorCode: 404, message: Friend request not found}"}
+{"level":"error","message":"URL: /api/otp/send, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"error","message":"URL: /api/otp/send, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"error","message":"URL: /api/otp/send, Error: {status: false, errorCode: 500, message: Error while sending email}"}
+{"level":"error","message":"URL: /api/otp/send, Error: {status: false, errorCode: 500, message: Error while sending email}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Cast to Number failed for value \"NaN\" (type number) at path \"otp\" for model \"Otp\"}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/otp/reset-password, Error: {name: Error, message: data and salt arguments required}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 400, message: Password should not be empty}"}
+{"level":"error","message":"URL: /api/otp/reset-password, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"error","message":"URL: /api/otp/reset-password, Error: {status: false, errorCode: 400, message: OTP not verified}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}

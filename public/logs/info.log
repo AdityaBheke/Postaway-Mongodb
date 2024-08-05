@@ -507,3 +507,62 @@
 {"level":"info","message":"TimeStamp: Sun Aug 04 2024 23:00:20 GMT+0530 (India Standard Time), URL: /api/friends/get-friends/66ae69ba0158c02cf688989e, Input Data: {}"}
 {"level":"info","message":"TimeStamp: Sun Aug 04 2024 23:00:30 GMT+0530 (India Standard Time), URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Input Data: {\"response\":true}"}
 {"level":"error","message":"URL: /api/friends/response-to-request/66ae7138ef95b9df3d39dd41, Error: {status: false, errorCode: 404, message: Friend request not found}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:44:43 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:48:07 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {}"}
+{"level":"error","message":"URL: /api/otp/send, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:48:32 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {\"email\":\"adityabheke34@gmail.com\"}"}
+{"level":"error","message":"URL: /api/otp/send, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:48:40 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {\"email\":\"aditya34@gmail.com\"}"}
+{"level":"error","message":"URL: /api/otp/send, Error: {status: false, errorCode: 500, message: Error while sending email}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:51:57 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {\"email\":\"aditya34@gmail.com\"}"}
+{"level":"error","message":"URL: /api/otp/send, Error: {status: false, errorCode: 500, message: Error while sending email}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:53:57 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {\"email\":\"aditya34@gmail.com\"}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:55:33 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"opt\":604964}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Cast to Number failed for value \"NaN\" (type number) at path \"otp\" for model \"Otp\"}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:57:03 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"opt\":604964}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:57:09 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {\"email\":\"aditya34@gmail.com\"}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:57:28 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"opt\":571852}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:58:12 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"opt\":571852}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:58:50 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":571852}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:59:40 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 02:59:54 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:00:25 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 401, message: Token expired}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:01:33 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:03:11 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":571852}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:04:18 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":571852}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:23:38 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {\"email\":\"aditya@gmail.com\"}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:24:17 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"error","message":"URL: /api/friends/get-pending-requests, Error: {status: false, errorCode: 401, message: Bad request Token not available}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:24:45 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {\"email\":\"aditya@gmail.com\"}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:25:44 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {\"email\":\"aditya@gmail.com\"}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:26:03 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":679937}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:26:28 GMT+0530 (India Standard Time), URL: /api/otp/reset-password, Input Data: {\"newPassword\":\"Aditya\"}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:27:14 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {\"email\":\"aditya@gmail.com\"}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:27:31 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":982448}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:27:45 GMT+0530 (India Standard Time), URL: /api/otp/reset-password, Input Data: {}"}
+{"level":"error","message":"URL: /api/otp/reset-password, Error: {name: Error, message: data and salt arguments required}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:28:35 GMT+0530 (India Standard Time), URL: /api/otp/reset-password, Input Data: {\"newPassword\":\"\"}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 400, message: Password should not be empty}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:30:36 GMT+0530 (India Standard Time), URL: /api/otp/reset-password, Input Data: {\"newPassword\":\"Aditya@10434\"}"}
+{"level":"error","message":"URL: /api/otp/reset-password, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:30:44 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":982448}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 404, message: User not found}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:30:50 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {\"email\":\"aditya@gmail.com\"}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:30:57 GMT+0530 (India Standard Time), URL: /api/otp/reset-password, Input Data: {\"newPassword\":\"Aditya@10434\"}"}
+{"level":"error","message":"URL: /api/otp/reset-password, Error: {status: false, errorCode: 400, message: OTP not verified}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:31:04 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":982448}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:31:08 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":982448}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:31:08 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":982448}"}
+{"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:31:41 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":368926}"}
+{"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:31:47 GMT+0530 (India Standard Time), URL: /api/otp/reset-password, Input Data: {\"newPassword\":\"Aditya@10434\"}"}
