@@ -59,14 +59,7 @@ export const createPostValidator = async(req, res, next)=>{
 // Update Post validator
 export const updatePostValidator = async (req, res, next)=>{
     const rules = [
-        param('id').isInt({min:0}).withMessage('Invalid post id'),
-        body('imageUrl').custom((value,{req})=>{
-            if (!req.file) {
-                throw new customError(400, 'File should not be empty');
-            }else{
-                return true;
-            }
-        })
+        
     ];
     await Promise.all(rules.map(rule=>rule.run(req)));
     const result = validationResult(req);
@@ -82,7 +75,6 @@ export const updatePostValidator = async (req, res, next)=>{
 // Comment content validator
 export const commentContentValidator = async (req, res, next)=>{
     const rules = [
-        param('id').isInt({min:0}).withMessage('Invalid post id'),
         body('content').notEmpty().withMessage('Comment cannot be empty')
     ];
     await Promise.all(rules.map(rule=>rule.run(req)));
@@ -99,7 +91,21 @@ export const commentContentValidator = async (req, res, next)=>{
 // post Id param validator
 export const postIdValidator = async (req, res, next)=>{
     const rules = [
-        param('id').isInt({min:0}).withMessage('Invalid post id')
+    ];
+    await Promise.all(rules.map(rule=>rule.run(req)));
+    const result = validationResult(req);
+    if (result.isEmpty()) {
+        next();
+    }else{
+        const errorArray = result.array().map(err=>err.msg);
+        const errorString = errorArray.join(', ');
+        next(new customError(400, errorString));
+    }
+}
+// Password validator
+export const passwordValidator =async (req, res, next)=>{
+    const rules = [
+        body('newPassword').notEmpty().withMessage('Password should not be empty')
     ];
     await Promise.all(rules.map(rule=>rule.run(req)));
     const result = validationResult(req);
