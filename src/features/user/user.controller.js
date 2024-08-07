@@ -28,7 +28,7 @@ export default class UserController{
           const result = await this.repository.findByEmail(email);
           const checkPassword = await bcrypt.compare( password, result.res.password);
           if (checkPassword) {
-            const token = jwt.sign({ userId: result.res._id, user: result.user }, "EpGbiLNDm5", { expiresIn: "1h" });
+            const token = jwt.sign({ userId: result.res._id, user: result.res }, "EpGbiLNDm5", { expiresIn: "1h" });
             res.cookie("jwtToken", token);
             result.token = token;
             return res.status(200).send(result);
@@ -61,7 +61,6 @@ export default class UserController{
         const {name, gender} = req.body;
         const avatar = req.file?.filename ;
         const updateData = {name, gender, avatar};
-        console.log(updateData);
         try {
             const result = await this.repository.updateUser(userId, updateData);
             return res.status(201).send(result);

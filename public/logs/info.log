@@ -566,3 +566,46 @@
 {"level":"error","message":"URL: /api/otp/verify, Error: {status: false, errorCode: 400, message: Invalid OTP. Try again.}"}
 {"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:31:41 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":368926}"}
 {"level":"info","message":"TimeStamp: Tue Aug 06 2024 03:31:47 GMT+0530 (India Standard Time), URL: /api/otp/reset-password, Input Data: {\"newPassword\":\"Aditya@10434\"}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:26:03 GMT+0530 (India Standard Time), URL: /api/otp/send, Input Data: {\"email\":\"adityabheke34@gmail.com\"}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:27:00 GMT+0530 (India Standard Time), URL: /api/otp/reset-password, Input Data: {\"newPassword\":\"\"}"}
+{"level":"error","message":"URL: /api/otp/reset-password, Error: {status: false, errorCode: 400, message: Password should not be empty}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:27:17 GMT+0530 (India Standard Time), URL: /api/otp/reset-password, Input Data: {\"newPassword\":\"Aditya@10434\"}"}
+{"level":"error","message":"URL: /api/otp/reset-password, Error: {status: false, errorCode: 400, message: OTP not verified}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:27:37 GMT+0530 (India Standard Time), URL: /api/otp/verify, Input Data: {\"otp\":571497}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:27:45 GMT+0530 (India Standard Time), URL: /api/otp/reset-password, Input Data: {\"newPassword\":\"Aditya@10434\"}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:28:17 GMT+0530 (India Standard Time), URL: /api/friends/get-pending-requests, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:33:49 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:34:42 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: imageUrl: Image cannot be empty}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:34:55 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: imageUrl: Image cannot be empty}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:38:10 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: imageUrl: Image cannot be empty}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:39:29 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: imageUrl: Image cannot be empty}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"adityabheke51@gmail.com\" }}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:53:11 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: imageUrl: Image cannot be empty}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 00:56:03 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: imageUrl: Image cannot be empty}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:00:41 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: imageUrl: Image cannot be empty}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:02:15 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:05:06 GMT+0530 (India Standard Time), URL: /api/posts, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:07:24 GMT+0530 (India Standard Time), URL: /api/posts/66b3cc6a7d86fdf32548323, Input Data: {}"}
+{"level":"error","message":"URL: /api/posts/66b3cc6a7d86fdf32548323, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \"66b3cc6a7d86fdf32548323\" (type string) at path \"_id\" for model \"Post\"}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:07:43 GMT+0530 (India Standard Time), URL: /api/posts/66b3cc6a7d86fdf325483234, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:08:26 GMT+0530 (India Standard Time), URL: /api/comments/66b3cc6a7d86fdf325483234, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:08:44 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {\"content\":\"Testing\"}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:09:16 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:09:47 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:10:03 GMT+0530 (India Standard Time), URL: /api/comments/66ae6c9ce96d534376984b63, Input Data: {\"content\":\"Testing\"}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:10:26 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:10:36 GMT+0530 (India Standard Time), URL: /api/comments/66b3cc6a7d86fdf325483234, Input Data: {\"content\":\"Testing\"}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:10:43 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:10:54 GMT+0530 (India Standard Time), URL: /api/comments/66b3cc6a7d86fdf325483234, Input Data: {\"content\":\"Testing update\"}"}
+{"level":"error","message":"URL: /api/comments/66b3cc6a7d86fdf325483234, Error: {status: false, errorCode: 404, message: Comment not found}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:11:12 GMT+0530 (India Standard Time), URL: /api/comments/66b3cdb47d86fdf325483254, Input Data: {\"content\":\"Testing update\"}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:11:21 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:11:52 GMT+0530 (India Standard Time), URL: /api/comments/66b3cc6a7d86fdf325483234, Input Data: {}"}
