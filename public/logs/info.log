@@ -609,3 +609,8 @@
 {"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:11:12 GMT+0530 (India Standard Time), URL: /api/comments/66b3cdb47d86fdf325483254, Input Data: {\"content\":\"Testing update\"}"}
 {"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:11:21 GMT+0530 (India Standard Time), URL: /api/posts/all, Input Data: {}"}
 {"level":"info","message":"TimeStamp: Thu Aug 08 2024 01:11:52 GMT+0530 (India Standard Time), URL: /api/comments/66b3cc6a7d86fdf325483234, Input Data: {}"}
+{"level":"info","message":"TimeStamp: Sat Oct 26 2024 11:46:48 GMT+0530 (India Standard Time), URL: /, Input Data: {}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: User validation failed: gender: Gender is required}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"aditya34@gmail.com\" }}"}

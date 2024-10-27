@@ -241,3 +241,7 @@
 {"level":"error","message":"URL: /api/posts, Error: {status: false, errorCode: 400, message: Post validation failed: imageUrl: Image cannot be empty}"}
 {"level":"error","message":"URL: /api/posts/66b3cc6a7d86fdf32548323, Error: {status: false, errorCode: 400, message: Cast to ObjectId failed for value \"66b3cc6a7d86fdf32548323\" (type string) at path \"_id\" for model \"Post\"}"}
 {"level":"error","message":"URL: /api/comments/66b3cc6a7d86fdf325483234, Error: {status: false, errorCode: 404, message: Comment not found}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: User validation failed: gender: Gender is required}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"aditya34@gmail.com\" }}"}

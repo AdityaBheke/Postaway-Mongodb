@@ -2,7 +2,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
-import swagger from 'swagger-ui-express';
 
 // Internal imports
 import userRouter from './src/features/user/user.router.js';
@@ -13,7 +12,6 @@ import friendRouter from './src/features/friend/friend.routes.js';
 import otpRouter from './src/features/otp/otp.routes.js';
 import { errorHandler } from './src/errorHandler/errorHandler.middleware.js';
 import { loggerMiddleware } from './src/middlewares/logger.middleware.js';
-import swaggerJson from './public/docs/swagger.json' assert {type: 'json'};
 import { connectUsingMongoose } from './src/config/mongodb.config.js';
 
 
@@ -22,8 +20,6 @@ const server = express();
 server.use(bodyParser.json());
 server.use(cookieParser());
 
-// Swagger docs
-server.use('/api-docs', swagger.serve, swagger.setup(swaggerJson));
 // Logger
 server.use(loggerMiddleware);
 //Custom Routes
