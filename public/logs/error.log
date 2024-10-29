@@ -245,3 +245,4 @@
 {"level":"error","message":"URL: /api/users/signin, Error: {status: false, errorCode: 401, message: Invalid credentials}"}
 {"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: User validation failed: gender: Gender is required}"}
 {"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"aditya34@gmail.com\" }}"}
+{"level":"error","message":"URL: /api/users/signup, Error: {status: false, errorCode: 400, message: E11000 duplicate key error collection: postaway.users index: email_1 dup key: { email: \"adityabheke51@gmail.com\" }}"}
