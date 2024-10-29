@@ -6,9 +6,10 @@ Postaway is a backend social media application designed with essential APIs need
 
 - [Features](#features)
 - [Technologies](#technologies)
-- [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
+- [Installation](#installation)
+
 
 ## Features
 
